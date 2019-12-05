@@ -84,6 +84,7 @@ ls -1d "$DIR/"*/ | while read dirname; do
         echo "Skipping existing $hookname"
         continue
     fi
+    echo "Installing $hookname"
     ln -s "$target" "$hookname"
 done
 
